@@ -1243,7 +1243,7 @@
       <div class="hero-globe-wrap fade-right" style="order: 2;">
         <div id="globe-canvas-wrap">
           <div class="globe-label">◉ THREAT INTELLIGENCE MAP — DELHI</div>
-          <div style="position:absolute;bottom:0px;left:50%;transform:translateX(-50%);font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim);white-space:nowrap;text-align:center;letter-spacing:0.08em;">
+          <div style="position:absolute;bottom:-22px;left:0;right:0;font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);white-space:nowrap;text-align:center;letter-spacing:0.06em;overflow:hidden;text-overflow:ellipsis;">
             This map is a live feature of <span style="color:var(--cyan);">AegisX SIEM</span> — built by Vansh
           </div>
         </div>
@@ -1259,6 +1259,17 @@
           <div style="flex:1;margin-top:1.2rem;">
             <div class="live-feed" id="live-feed"></div>
             <div class="visitor-ip-row">YOU: <span id="visitor-location">Detecting...</span></div>
+            <!-- WHAT IS THIS inside panel -->
+            <div style="margin-top:0.75rem;padding-top:0.6rem;border-top:1px solid rgba(0,212,255,0.12);">
+              <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--cyan);letter-spacing:0.1em;margin-bottom:0.4rem;">// WHAT IS THIS?</div>
+              <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-dim);line-height:1.7;display:flex;flex-direction:column;gap:0.2rem;">
+                <div>▸ <span style="color:var(--text);">Red number</span> = Cyberattacks detected today</div>
+                <div>▸ <span style="color:var(--text);">Country</span> = Where the threat originated</div>
+                <div>▸ <span style="color:var(--text);">Attack type</span> = Brute Force, DDoS, Phishing etc.</div>
+                <div>▸ <span style="color:var(--text);">Globe arcs</span> = Threats traced to Delhi hub</div>
+                <div>▸ <span style="color:#00ff88;">🟢 Delhi</span> = Active investigation point</div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- EXPLANATION BOX -->
