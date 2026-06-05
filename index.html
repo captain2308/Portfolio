@@ -1145,7 +1145,7 @@
     /* ===== RESPONSIVE ===== */
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; }
-      .hero-globe-wrap { height: 280px; order: -1; }
+      .hero-globe-wrap { height: auto; order: -1; }
       #globe-canvas-wrap { width: 260px; height: 260px; }
       .about-grid { grid-template-columns: 1fr; }
       .contact-grid { grid-template-columns: 1fr; }
@@ -1155,12 +1155,19 @@
       .nav-links { display: none; }
       .nav-hamburger { display: flex; }
       section { padding: 3.5rem 0; }
+      #globe-canvas-wrap { display: none; }
+      .globe-label { display: none; }
+      .hero-globe-wrap { gap: 0.5rem; min-height: auto; }
+      .live-threat-panel { max-width: 100%; }
+      .what-is-this { display: none; }
     }
     @media (max-width: 480px) {
       .highlights-grid { grid-template-columns: repeat(2, 1fr); }
       .cert-grid { grid-template-columns: 1fr; }
       .hero-btns { flex-direction: column; }
       .btn-primary, .btn-outline { text-align: center; }
+      .live-threat-panel { flex-direction: column; gap: 0.5rem; }
+      .live-counter-wrap { border-right: none; border-bottom: 1px solid rgba(0,212,255,0.15); padding-right: 0; padding-bottom: 0.5rem; flex-direction: row; gap: 0.75rem; align-items: baseline; }
     }
   </style>
 </head>
@@ -1233,7 +1240,7 @@
           </a>
         </div>
       </div>
-      <div class="hero-globe-wrap fade-right">
+      <div class="hero-globe-wrap fade-right" style="order: 2;">
         <div id="globe-canvas-wrap">
           <div class="globe-label">◉ THREAT INTELLIGENCE MAP — DELHI</div>
           <div style="position:absolute;bottom:0px;left:50%;transform:translateX(-50%);font-family:var(--font-mono);font-size:0.62rem;color:var(--text-dim);white-space:nowrap;text-align:center;letter-spacing:0.08em;">
@@ -1255,7 +1262,7 @@
           </div>
         </div>
         <!-- EXPLANATION BOX -->
-        <div style="width:100%;max-width:360px;font-family:var(--font-mono);font-size:0.68rem;color:var(--text-dim);background:rgba(5,13,26,0.7);border:1px solid rgba(0,212,255,0.1);border-radius:8px;padding:0.75rem 1rem;line-height:1.7;">
+        <div class="what-is-this" style="width:100%;max-width:360px;font-family:var(--font-mono);font-size:0.68rem;color:var(--text-dim);background:rgba(5,13,26,0.7);border:1px solid rgba(0,212,255,0.1);border-radius:8px;padding:0.75rem 1rem;line-height:1.7;">
           <div style="color:var(--cyan);letter-spacing:0.1em;margin-bottom:0.5rem;font-size:0.65rem;">// WHAT IS THIS?</div>
           <div style="display:flex;flex-direction:column;gap:0.3rem;">
             <div>▸ <span style="color:var(--text);">Red number</span> = Total cyberattacks detected today worldwide</div>
@@ -1316,7 +1323,7 @@
           <div class="meta-item"><span class="icon">📍</span> Delhi, India</div>
           <div class="meta-item"><span class="icon">✉️</span> <a href="mailto:vk5899029@gmail.com">vk5899029@gmail.com</a></div>
           <div class="meta-item"><span class="icon">�</span> <a href="https://linkedin.com/in/vansh-kumar-511748353" target="_blank" rel="noopener">LinkedIn Profile</a></div>
-          <div class="meta-item"><span class="icon">💻</span> <a href="https://github.com" target="_blank" rel="noopener">GitHub Profile</a></div>
+          <div class="meta-item"><span class="icon">💻</span> <a href="https://github.com/captain2308" target="_blank" rel="noopener">github.com/captain2308</a></div>
         </div>
       </div>
       <div class="fade-right">
@@ -1561,7 +1568,7 @@
           <li><span class="feat-icon">✦</span> 50+ REST API endpoints</li>
         </ul>
         <div class="project-btns">
-          <a href="https://github.com" target="_blank" rel="noopener" class="btn-sm primary">GitHub →</a>
+          <a href="https://github.com/captain2308" target="_blank" rel="noopener" class="btn-sm primary">GitHub →</a>
           <a href="#" class="btn-sm outline">Live Demo →</a>
         </div>
         <div style="margin-top:1rem;padding:0.85rem 1rem;background:rgba(0,212,255,0.04);border:1px solid rgba(0,212,255,0.12);border-radius:8px;">
@@ -1598,7 +1605,7 @@
           <li><span class="feat-icon">✦</span> Cross-case search &amp; full audit logging</li>
         </ul>
         <div class="project-btns">
-          <a href="https://github.com" target="_blank" rel="noopener" class="btn-sm primary">GitHub →</a>
+          <a href="https://github.com/captain2308" target="_blank" rel="noopener" class="btn-sm primary">GitHub →</a>
         </div>
       </div>
 
@@ -1722,11 +1729,11 @@
             <div class="contact-value">vansh-kumar-511748353</div>
           </div>
         </a>
-        <a href="https://github.com" target="_blank" rel="noopener" class="contact-card-item fade-left stagger-2">
+        <a href="https://github.com/captain2308" target="_blank" rel="noopener" class="contact-card-item fade-left stagger-2">
           <div class="contact-icon">💻</div>
           <div>
             <div class="contact-label">GitHub</div>
-            <div class="contact-value">github.com/vansh</div>
+            <div class="contact-value">github.com/captain2308</div>
           </div>
         </a>
         <div class="contact-card-item fade-left stagger-3" style="cursor:default;">
