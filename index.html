@@ -1145,7 +1145,7 @@
     /* ===== RESPONSIVE ===== */
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; }
-      .hero-globe-wrap { height: auto; order: -1; }
+      .hero-globe-wrap { height: auto; order: 0; }
       #globe-canvas-wrap { width: 260px; height: 260px; }
       .about-grid { grid-template-columns: 1fr; }
       .contact-grid { grid-template-columns: 1fr; }
@@ -1155,8 +1155,7 @@
       .nav-links { display: none; }
       .nav-hamburger { display: flex; }
       section { padding: 3.5rem 0; }
-      #globe-canvas-wrap { display: none; }
-      .globe-label { display: none; }
+      #globe-canvas-wrap { width: 280px; height: 280px; }
       .hero-globe-wrap { gap: 0.5rem; min-height: auto; }
       .live-threat-panel { max-width: 100%; }
       .what-is-this { display: none; }
@@ -1168,6 +1167,7 @@
       .btn-primary, .btn-outline { text-align: center; }
       .live-threat-panel { flex-direction: column; gap: 0.5rem; }
       .live-counter-wrap { border-right: none; border-bottom: 1px solid rgba(0,212,255,0.15); padding-right: 0; padding-bottom: 0.5rem; flex-direction: row; gap: 0.75rem; align-items: baseline; }
+      #globe-canvas-wrap { width: 240px; height: 240px; }
     }
   </style>
 </head>
